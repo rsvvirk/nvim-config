@@ -22,3 +22,15 @@ vim.keymap.set('n', '<leader>>', ':vertical resize +20<CR>')
 vim.keymap.set('n', '<leader><', ':vertical resize -20<CR>')
 
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
+vim.keymap.set('n', 'gr', vim.lsp.buf.references)
+
+vim.keymap.set('n', '[b', ':bprevious<CR>')
+vim.keymap.set('n', ']b', ':bnext<CR>')
+
+-- Keep search result in center
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
+-- Stay in indent mode in visual
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
