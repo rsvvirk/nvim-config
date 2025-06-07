@@ -126,13 +126,5 @@ return {
                 prefix = "",
             },
         })
-
-        vim.api.nvim_create_autocmd("BufWritePre", {
-            pattern = "*.go",
-            callback = function()
-                vim.cmd("silent! !goimports -w %")
-                vim.cmd("edit!")
-            end
-        })
     end
 }
