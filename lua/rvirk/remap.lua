@@ -21,9 +21,6 @@ vim.keymap.set('n', '<leader>k', '<C-w>k')
 vim.keymap.set('n', '<leader>>', ':vertical resize +20<CR>')
 vim.keymap.set('n', '<leader><', ':vertical resize -20<CR>')
 
-vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
-vim.keymap.set('n', 'gr', vim.lsp.buf.references)
-
 vim.keymap.set('n', '[b', ':bprevious<CR>')
 vim.keymap.set('n', ']b', ':bnext<CR>')
 
